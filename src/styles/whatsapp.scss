@@ -1,0 +1,27 @@
+.whatsappContainer{
+    float: right;
+
+    position: sticky;
+    right: 20px;
+    top: 90vh;
+    
+    transition: top 0.4s;
+
+    .whatsapp{
+    color: var(--white);
+    background: var(--green);
+    border: 2px solid var(--white);
+    box-shadow: 4px 4px 8px #00000033;
+
+    border-radius: 100%;
+    padding: 1.7rem 0.5rem 0.2rem 0.5rem;
+
+    &:hover{
+        background: #17d741;
+    }
+    }
+
+    &:hover{
+        top: 88vh;
+    }
+}

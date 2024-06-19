@@ -1,0 +1,24 @@
+.footer{
+    background: var(--blue-800);
+    color: var(--gray-100);
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+
+    a{
+        color: var(--gray-100);
+        padding: 1rem;
+
+        &:hover{
+            color: var(--blue-100);
+        }
+    }
+}
+
+.infoEmpresa{
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}

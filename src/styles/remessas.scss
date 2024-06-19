@@ -1,0 +1,151 @@
+.title{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.form{
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: block;
+}
+
+.headerForm{
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+
+    #step1Header {
+        background-color: #002A42; /* Cor inicial do header do step1 */
+    }
+
+    a{
+        width: 100%;
+        padding: 1rem;
+        background-color: gray;
+        color: var(--white);
+        border-bottom: 3px solid var(--blue-800);
+    }
+
+    a + a{
+        border-left: 2px solid var(--gray-100);
+    }
+
+    a:hover{
+        background: var(--blue-200);
+    }
+}
+
+.formBox{
+    background: var(--gray-300);
+    border-top: 4px solid var(--blue-800);
+    border-radius: 0 0 8px 8px;
+
+    padding: 2rem;
+}
+
+.formBox input, .formBox select{
+    background: var(--white);
+    border: 1px solid var(--blue-100);
+    border-radius: 8px;
+
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.formLine{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.formLine + .formLine {
+    margin-top: 0.5rem;
+}
+
+.formLine > .formLine{
+    align-items: end;
+    justify-content: end;
+}
+
+.formItem{
+    display: grid;
+    width: 100%;
+
+    select > option{
+        margin: 2px 0;
+        border: 3px solid gray;
+    }
+}
+
+.formButton button{
+    padding: 0.75rem;
+    background: var(--blue-800);
+    border: 1px solid var(--gray-300);
+    color: var(--gray-100);
+    border-radius: 4px;
+
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.formButton [type=prev], .formButton [type=reset]{
+    background: var(--gray-700);
+}
+
+.formButton [type=submit]{
+    background: var(--blue-700);
+    padding: 0.75rem 5rem;
+}
+
+.formButton button:hover{
+    background: var(--blue-600);
+}
+
+.formItem [id=remetente], .formItem [id=destinatario]{
+    min-width: 40vw;
+}
+
+.formItem [id=enderecoColeta], .formItem [id=enderecoEntrega]{
+    min-width: 40vw;
+}
+
+.formItem [id=cidadeColeta], .formItem [id=cidadeEntrega]{
+    min-width: 30vw;
+}
+
+.formItem [id=notaFiscal], .formItem [type=address], .formItem [id=descricaoMaterial]{
+    width: 35vw;
+}
+
+.formItem [id=telefoneColeta], .formItem [id=telefoneEntrega], .formItem [id=telefoneContato]{
+    width: 20vw;
+}
+
+.formCheck{
+    width: 100%;
+}
+
+.formCheckItem [type=checkbox]{
+    width: 16px;
+    height: 16px;
+    margin-right: 0.25rem;
+}
+
+@media (max-width: 875px) {
+    .formLine{
+        display: block;
+    }
+    .formLine + .formLine{
+        padding: 1rem 0;
+        border-top: 1px solid var(--gray-700);
+    }
+    .formLine > .formButton{
+        display: inline-flex;
+    }
+    .formItem [id=notaFiscal], .formItem [type=address], .formItem [id=descricaoMaterial], .formItem [id=telefoneColeta], .formItem [id=telefoneEntrega], .formItem [id=telefoneContato]{
+        width: 100%;
+    }
+}

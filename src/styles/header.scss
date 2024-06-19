@@ -1,0 +1,35 @@
+.header{
+    margin: 2.75rem 0 0 0;
+    background: var(--gray-100);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img{
+        width: 150px;
+        align-content: center;
+    }
+}
+
+.headerLink{
+    padding: 1.5rem;
+
+    a{
+        background: var(--blue-200);
+        color: var(--gray-100);
+    
+        font-size: 1rem;
+        padding: 1rem;
+        border-left: 1px solid var(--gray-100);
+    
+        transition: background-color 0.2s;
+
+        &:hover{
+            background: var(--blue-800);
+        }
+
+        &:focus, &:active{
+            border: 0;
+        }
+    }
+}
